@@ -2,4 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Upload a file to get the size in bytes.
+  form(method='post', enctype='multipart/form-data')
+    input(type='file', name='fileupload')
+    input(type='submit', name='uploadfile')
